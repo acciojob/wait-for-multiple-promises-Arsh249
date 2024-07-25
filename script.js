@@ -17,10 +17,7 @@ const promises = [
 
 // By default, add a row that spans 2 columns with the exact text Loading...
 const tableBody = document.getElementById('output');
-const loadingRow = document.createElement('tr');
-loadingRow.className = "loading"
-loadingRow.innerHTML = '<td colspan="2">Loading...</td>';
-tableBody.appendChild(loadingRow);
+
 
 // Wait for all promises to resolve using Promise.all()
 const startTime = performance.now();
